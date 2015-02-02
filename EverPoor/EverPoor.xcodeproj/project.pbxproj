@@ -12,6 +12,13 @@
 		65FA2AD31A7F917900E87793 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FA2AD21A7F917900E87793 /* Images.xcassets */; };
 		65FA2AD61A7F917900E87793 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65FA2AD41A7F917900E87793 /* LaunchScreen.xib */; };
 		65FA2AE21A7F917900E87793 /* EverPoorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AE11A7F917900E87793 /* EverPoorTests.m */; };
+		65FA2AEE1A7F958000E87793 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AEC1A7F958000E87793 /* Model.xcdatamodeld */; };
+		65FA2AFB1A7FAB2D00E87793 /* _DLMKNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AF01A7FAB2D00E87793 /* _DLMKNote.m */; };
+		65FA2AFC1A7FAB2D00E87793 /* _DLMKNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AF21A7FAB2D00E87793 /* _DLMKNotebook.m */; };
+		65FA2AFD1A7FAB2D00E87793 /* _DLMKPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AF41A7FAB2D00E87793 /* _DLMKPhotoContainer.m */; };
+		65FA2AFE1A7FAB2D00E87793 /* DLMKNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AF61A7FAB2D00E87793 /* DLMKNote.m */; };
+		65FA2AFF1A7FAB2D00E87793 /* DLMKNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AF81A7FAB2D00E87793 /* DLMKNotebook.m */; };
+		65FA2B001A7FAB2D00E87793 /* DLMKPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AFA1A7FAB2D00E87793 /* DLMKPhotoContainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,19 @@
 		65FA2ADB1A7F917900E87793 /* EverPoorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverPoorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA2AE01A7F917900E87793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65FA2AE11A7F917900E87793 /* EverPoorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EverPoorTests.m; sourceTree = "<group>"; };
+		65FA2AED1A7F958000E87793 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		65FA2AEF1A7FAB2D00E87793 /* _DLMKNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DLMKNote.h; sourceTree = "<group>"; };
+		65FA2AF01A7FAB2D00E87793 /* _DLMKNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DLMKNote.m; sourceTree = "<group>"; };
+		65FA2AF11A7FAB2D00E87793 /* _DLMKNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DLMKNotebook.h; sourceTree = "<group>"; };
+		65FA2AF21A7FAB2D00E87793 /* _DLMKNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DLMKNotebook.m; sourceTree = "<group>"; };
+		65FA2AF31A7FAB2D00E87793 /* _DLMKPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DLMKPhotoContainer.h; sourceTree = "<group>"; };
+		65FA2AF41A7FAB2D00E87793 /* _DLMKPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DLMKPhotoContainer.m; sourceTree = "<group>"; };
+		65FA2AF51A7FAB2D00E87793 /* DLMKNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKNote.h; sourceTree = "<group>"; };
+		65FA2AF61A7FAB2D00E87793 /* DLMKNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKNote.m; sourceTree = "<group>"; };
+		65FA2AF71A7FAB2D00E87793 /* DLMKNotebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKNotebook.h; sourceTree = "<group>"; };
+		65FA2AF81A7FAB2D00E87793 /* DLMKNotebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKNotebook.m; sourceTree = "<group>"; };
+		65FA2AF91A7FAB2D00E87793 /* DLMKPhotoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKPhotoContainer.h; sourceTree = "<group>"; };
+		65FA2AFA1A7FAB2D00E87793 /* DLMKPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKPhotoContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 		65FA2ABF1A7F917900E87793 = {
 			isa = PBXGroup;
 			children = (
+				65FA2AEB1A7F950E00E87793 /* Models */,
 				65FA2ACA1A7F917900E87793 /* EverPoor */,
 				65FA2ADE1A7F917900E87793 /* EverPoorTests */,
 				65FA2AC91A7F917900E87793 /* Products */,
@@ -109,6 +130,26 @@
 				65FA2AE01A7F917900E87793 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65FA2AEB1A7F950E00E87793 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65FA2AEF1A7FAB2D00E87793 /* _DLMKNote.h */,
+				65FA2AF01A7FAB2D00E87793 /* _DLMKNote.m */,
+				65FA2AF11A7FAB2D00E87793 /* _DLMKNotebook.h */,
+				65FA2AF21A7FAB2D00E87793 /* _DLMKNotebook.m */,
+				65FA2AF31A7FAB2D00E87793 /* _DLMKPhotoContainer.h */,
+				65FA2AF41A7FAB2D00E87793 /* _DLMKPhotoContainer.m */,
+				65FA2AF51A7FAB2D00E87793 /* DLMKNote.h */,
+				65FA2AF61A7FAB2D00E87793 /* DLMKNote.m */,
+				65FA2AF71A7FAB2D00E87793 /* DLMKNotebook.h */,
+				65FA2AF81A7FAB2D00E87793 /* DLMKNotebook.m */,
+				65FA2AF91A7FAB2D00E87793 /* DLMKPhotoContainer.h */,
+				65FA2AFA1A7FAB2D00E87793 /* DLMKPhotoContainer.m */,
+				65FA2AEC1A7F958000E87793 /* Model.xcdatamodeld */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +251,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FA2AFE1A7FAB2D00E87793 /* DLMKNote.m in Sources */,
 				65FA2AD11A7F917900E87793 /* AppDelegate.m in Sources */,
+				65FA2AFF1A7FAB2D00E87793 /* DLMKNotebook.m in Sources */,
 				65FA2ACE1A7F917900E87793 /* main.m in Sources */,
+				65FA2B001A7FAB2D00E87793 /* DLMKPhotoContainer.m in Sources */,
+				65FA2AEE1A7F958000E87793 /* Model.xcdatamodeld in Sources */,
+				65FA2AFC1A7FAB2D00E87793 /* _DLMKNotebook.m in Sources */,
+				65FA2AFD1A7FAB2D00E87793 /* _DLMKPhotoContainer.m in Sources */,
+				65FA2AFB1A7FAB2D00E87793 /* _DLMKNote.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +452,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65FA2AEC1A7F958000E87793 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65FA2AED1A7F958000E87793 /* Model.xcdatamodel */,
+			);
+			currentVersion = 65FA2AED1A7F958000E87793 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 65FA2AC01A7F917900E87793 /* Project object */;
 }
