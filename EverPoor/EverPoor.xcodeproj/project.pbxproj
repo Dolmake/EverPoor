@@ -135,12 +135,7 @@
 		65FA2AEB1A7F950E00E87793 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				65FA2AEF1A7FAB2D00E87793 /* _DLMKNote.h */,
-				65FA2AF01A7FAB2D00E87793 /* _DLMKNote.m */,
-				65FA2AF11A7FAB2D00E87793 /* _DLMKNotebook.h */,
-				65FA2AF21A7FAB2D00E87793 /* _DLMKNotebook.m */,
-				65FA2AF31A7FAB2D00E87793 /* _DLMKPhotoContainer.h */,
-				65FA2AF41A7FAB2D00E87793 /* _DLMKPhotoContainer.m */,
+				65FA2B011A7FABFB00E87793 /* Machine */,
 				65FA2AF51A7FAB2D00E87793 /* DLMKNote.h */,
 				65FA2AF61A7FAB2D00E87793 /* DLMKNote.m */,
 				65FA2AF71A7FAB2D00E87793 /* DLMKNotebook.h */,
@@ -150,6 +145,19 @@
 				65FA2AEC1A7F958000E87793 /* Model.xcdatamodeld */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		65FA2B011A7FABFB00E87793 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				65FA2AEF1A7FAB2D00E87793 /* _DLMKNote.h */,
+				65FA2AF01A7FAB2D00E87793 /* _DLMKNote.m */,
+				65FA2AF11A7FAB2D00E87793 /* _DLMKNotebook.h */,
+				65FA2AF21A7FAB2D00E87793 /* _DLMKNotebook.m */,
+				65FA2AF31A7FAB2D00E87793 /* _DLMKPhotoContainer.h */,
+				65FA2AF41A7FAB2D00E87793 /* _DLMKPhotoContainer.m */,
+			);
+			name = Machine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
