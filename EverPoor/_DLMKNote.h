@@ -2,6 +2,7 @@
 // Make changes to DLMKNote.h instead.
 
 @import CoreData;
+#import "DLMKEverPoorBaseManagedObject.h"
 
 extern const struct DLMKNoteAttributes {
 	__unsafe_unretained NSString *creationDate;
@@ -21,7 +22,7 @@ extern const struct DLMKNoteRelationships {
 @interface DLMKNoteID : NSManagedObjectID {}
 @end
 
-@interface _DLMKNote : NSManagedObject {}
+@interface _DLMKNote : DLMKEverPoorBaseManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

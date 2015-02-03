@@ -1,5 +1,6 @@
 #import "_DLMKNote.h"
 @class DLMKNotebook;
+@class DLMKBaseModelManagedObject;
 
 @interface DLMKNote : _DLMKNote {}
 // Custom logic goes here.

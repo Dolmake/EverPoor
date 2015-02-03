@@ -2,6 +2,7 @@
 // Make changes to DLMKPhotoContainer.h instead.
 
 @import CoreData;
+#import "DLMKEverPoorBaseManagedObject.h"
 
 extern const struct DLMKPhotoContainerAttributes {
 	__unsafe_unretained NSString *photoData;
@@ -16,7 +17,7 @@ extern const struct DLMKPhotoContainerRelationships {
 @interface DLMKPhotoContainerID : NSManagedObjectID {}
 @end
 
-@interface _DLMKPhotoContainer : NSManagedObject {}
+@interface _DLMKPhotoContainer : DLMKEverPoorBaseManagedObject {}
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_;
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;

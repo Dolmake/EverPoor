@@ -10,4 +10,13 @@
 
 // Custom logic goes here.
 
+-(UIImage*) image{
+    return [UIImage imageWithData:self.photoData];
+}
+
+-(void) setImage:(UIImage *)image{
+    
+    self.photoData = UIImagePNGRepresentation(image);
+}
+
 @end
