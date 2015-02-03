@@ -20,6 +20,7 @@
 		65FA2AFF1A7FAB2D00E87793 /* DLMKNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AF81A7FAB2D00E87793 /* DLMKNotebook.m */; };
 		65FA2B001A7FAB2D00E87793 /* DLMKPhotoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AFA1A7FAB2D00E87793 /* DLMKPhotoContainer.m */; };
 		65FA2B0A1A80CF4100E87793 /* DLMKEverPoorBaseManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2B091A80CF4100E87793 /* DLMKEverPoorBaseManagedObject.m */; };
+		65FA2B0D1A80D70A00E87793 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2B0C1A80D70A00E87793 /* AGTCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		65FA2AFA1A7FAB2D00E87793 /* DLMKPhotoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKPhotoContainer.m; sourceTree = "<group>"; };
 		65FA2B081A80CF4100E87793 /* DLMKEverPoorBaseManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKEverPoorBaseManagedObject.h; sourceTree = "<group>"; };
 		65FA2B091A80CF4100E87793 /* DLMKEverPoorBaseManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKEverPoorBaseManagedObject.m; sourceTree = "<group>"; };
+		65FA2B0B1A80D70A00E87793 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataStack.h; sourceTree = "<group>"; };
+		65FA2B0C1A80D70A00E87793 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 		65FA2AEB1A7F950E00E87793 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				65FA2B0B1A80D70A00E87793 /* AGTCoreDataStack.h */,
+				65FA2B0C1A80D70A00E87793 /* AGTCoreDataStack.m */,
 				65FA2B011A7FABFB00E87793 /* Machine */,
 				65FA2AF51A7FAB2D00E87793 /* DLMKNote.h */,
 				65FA2AF61A7FAB2D00E87793 /* DLMKNote.m */,
@@ -264,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FA2B0D1A80D70A00E87793 /* AGTCoreDataStack.m in Sources */,
 				65FA2AFE1A7FAB2D00E87793 /* DLMKNote.m in Sources */,
 				65FA2AD11A7F917900E87793 /* AppDelegate.m in Sources */,
 				65FA2AFF1A7FAB2D00E87793 /* DLMKNotebook.m in Sources */,

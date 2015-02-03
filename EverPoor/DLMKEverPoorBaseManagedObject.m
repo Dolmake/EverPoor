@@ -45,7 +45,8 @@
         //Subscribe  in notifications. One per Property
         [self addObserver:self
                forKeyPath:key
-                  options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+                  //options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+                  options:0
                   context:NULL];
     }
 }
