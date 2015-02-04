@@ -89,9 +89,12 @@
     
     DLMKNotebook *nb = [DLMKNotebook notebookWithName:@"Enemigos" context:self.stack.context];
     
-    [DLMKNote noteWithName:@"Vegeta" notebook:nb context:self.stack.context];
-        [DLMKNote noteWithName:@"Nappa" notebook:nb context:self.stack.context];
-        [DLMKNote noteWithName:@"Radix" notebook:nb context:self.stack.context];
+    DLMKNote *noteVegeta = [DLMKNote noteWithName:@"Vegeta" notebook:nb context:self.stack.context];
+    noteVegeta.text = @"Vegeta prince of Sayans";
+    DLMKNote *noteNappa =    [DLMKNote noteWithName:@"Nappa" notebook:nb context:self.stack.context];
+    noteNappa.text = @"Nappa...no comments";
+    DLMKNote *noteRadix =    [DLMKNote noteWithName:@"Radix" notebook:nb context:self.stack.context];
+    noteRadix.text = @"Radix: Gokuh's bro";
     
     //NSLog(@"Libreta: %@", nb);
     //NSLog(@"Foes: %@", nb.notes);

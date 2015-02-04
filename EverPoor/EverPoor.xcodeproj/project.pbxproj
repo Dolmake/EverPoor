@@ -11,6 +11,8 @@
 		65CC9F7D1A82208E00D85889 /* DLMKNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F7B1A82208E00D85889 /* DLMKNotebooksViewController.m */; };
 		65CC9F821A823E1F00D85889 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F811A823E1F00D85889 /* UIViewController+Navigation.m */; };
 		65CC9F851A82437F00D85889 /* DLMKNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F841A82437F00D85889 /* DLMKNotesViewController.m */; };
+		65CC9F891A82B29C00D85889 /* DLMKNoteTableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F871A82B29C00D85889 /* DLMKNoteTableViewCellController.m */; };
+		65CC9F8A1A82B29C00D85889 /* DLMKNoteTableViewCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9F881A82B29C00D85889 /* DLMKNoteTableViewCellController.xib */; };
 		65FA2ACE1A7F917900E87793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2ACD1A7F917900E87793 /* main.m */; };
 		65FA2AD11A7F917900E87793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AD01A7F917900E87793 /* AppDelegate.m */; };
 		65FA2AD31A7F917900E87793 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FA2AD21A7F917900E87793 /* Images.xcassets */; };
@@ -46,6 +48,9 @@
 		65CC9F811A823E1F00D85889 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
 		65CC9F831A82437F00D85889 /* DLMKNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKNotesViewController.h; sourceTree = "<group>"; };
 		65CC9F841A82437F00D85889 /* DLMKNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKNotesViewController.m; sourceTree = "<group>"; };
+		65CC9F861A82B29C00D85889 /* DLMKNoteTableViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKNoteTableViewCellController.h; sourceTree = "<group>"; };
+		65CC9F871A82B29C00D85889 /* DLMKNoteTableViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKNoteTableViewCellController.m; sourceTree = "<group>"; };
+		65CC9F881A82B29C00D85889 /* DLMKNoteTableViewCellController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLMKNoteTableViewCellController.xib; sourceTree = "<group>"; };
 		65FA2AC81A7F917900E87793 /* EverPoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverPoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA2ACC1A7F917900E87793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65FA2ACD1A7F917900E87793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +107,9 @@
 				65CC9F7B1A82208E00D85889 /* DLMKNotebooksViewController.m */,
 				65CC9F831A82437F00D85889 /* DLMKNotesViewController.h */,
 				65CC9F841A82437F00D85889 /* DLMKNotesViewController.m */,
+				65CC9F861A82B29C00D85889 /* DLMKNoteTableViewCellController.h */,
+				65CC9F871A82B29C00D85889 /* DLMKNoteTableViewCellController.m */,
+				65CC9F881A82B29C00D85889 /* DLMKNoteTableViewCellController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65CC9F8A1A82B29C00D85889 /* DLMKNoteTableViewCellController.xib in Resources */,
 				65FA2AD61A7F917900E87793 /* LaunchScreen.xib in Resources */,
 				65FA2AD31A7F917900E87793 /* Images.xcassets in Resources */,
 			);
@@ -309,6 +318,7 @@
 				65FA2B0D1A80D70A00E87793 /* AGTCoreDataStack.m in Sources */,
 				65FA2AFE1A7FAB2D00E87793 /* DLMKNote.m in Sources */,
 				65CC9F781A82201800D85889 /* AGTCoreDataTableViewController.m in Sources */,
+				65CC9F891A82B29C00D85889 /* DLMKNoteTableViewCellController.m in Sources */,
 				65FA2AD11A7F917900E87793 /* AppDelegate.m in Sources */,
 				65CC9F821A823E1F00D85889 /* UIViewController+Navigation.m in Sources */,
 				65FA2AFF1A7FAB2D00E87793 /* DLMKNotebook.m in Sources */,

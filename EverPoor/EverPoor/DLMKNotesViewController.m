@@ -10,18 +10,27 @@
 #import "DLMKNote.h"
 #import "DLMKPhotoContainer.h"
 #import "DLMKNotebook.h"
+#import "DLMKNoteTableViewCellController.h"
 
 @implementation DLMKNotesViewController
 
 -(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
        self.title = self.notebook.name;
 }
 -(void) viewDidLoad{
 
+    [super viewDidLoad];
     UIBarButtonItem *b = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNote:)];
     
     self.navigationItem.rightBarButtonItem = b;
  
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    //TODO: ask for the real size
+    return 100.0;
 }
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -32,25 +41,20 @@
     
     //Create the cell
     static NSString* CELL_ID =  @"CELL_NOTE_ID";
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID];
     
-    if (!cell){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CELL_ID ];
-    }
+     //Custom Cell
+     DLMKNoteTableViewCellController *cell = (DLMKNoteTableViewCellController*)[tableView dequeueReusableCellWithIdentifier:CELL_ID];
+     
+     if (!cell)
+     {
+         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"DLMKNoteTableViewCellController" owner:self options:nil];
+         cell = [nib firstObject];
+     }
     
-    //Setup the cell
-    cell.textLabel.text = note.name;
-    cell.imageView.image = note.photo.image;
-    
-    NSDateFormatter * fmt = [NSDateFormatter new];
-    fmt.dateStyle = NSDateFormatterShortStyle;
-    cell.detailTextLabel.text = [ NSString stringWithFormat:@"%@",
-                                 [fmt stringFromDate:note.modificationDate]];
-    
+     cell.noteModel = note;
     return cell;
 
-    
-}
+    }
 
 -(void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     
