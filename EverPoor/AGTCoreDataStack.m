@@ -194,12 +194,14 @@
                                   code:1
                               userInfo:@{NSLocalizedDescriptionKey :
                                              @"Attempted to save a nil NSManagedObjectContext. This AGTCoreDataStack has no context - probably there was an earlier error trying to access the CoreData database file."}];
-        errorBlock(err);
+        if (errorBlock != nil)
+            errorBlock(err);
     }
     else{
         result = [self.context executeFetchRequest:req error:&err];
         if (!result)
-            errorBlock(err);        
+            if (errorBlock != nil)
+                errorBlock(err);
     }
     return result;
 }

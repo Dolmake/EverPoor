@@ -10,6 +10,8 @@
 #import "AGTCoreDataStack.h"
 #import "DLMKNote.h"
 #import "DLMKNotebook.h"
+#import "DLMKNotebooksViewController.h"
+#import "UIViewController+Navigation.h"
 
 
 @interface AppDelegate ()
@@ -23,14 +25,35 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     //Create the Stack
     self.stack = [AGTCoreDataStack coreDataStackWithModelName:@"Model"];
     
     [self createDummyData];
     
-    [self workWithData];
+    //[self workWithData];
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //Create a fake Fetchrequest
+    NSFetchRequest* req = [NSFetchRequest fetchRequestWithEntityName:[DLMKNotebook entityName]];
+    req.fetchBatchSize = 30;
+    req.sortDescriptors = @[
+                            [NSSortDescriptor sortDescriptorWithKey:DLMKNoteAttributes.name ascending:YES selector:@selector(caseInsensitiveCompare:)],
+                             //[NSSortDescriptor sortDescriptorWithKey:DLMKNoteAttributes.name ascending:YES],
+                             [NSSortDescriptor sortDescriptorWithKey:DLMKNoteAttributes.modificationDate ascending:NO]
+                            ];
+    
+    NSFetchedResultsController *fetchController = [[NSFetchedResultsController alloc] initWithFetchRequest:req managedObjectContext:self.stack.context sectionNameKeyPath:nil cacheName:nil ];
+    
+    //Create the controller and push it into a Navigation controller
+    DLMKNotebooksViewController *notebookVC = [[DLMKNotebooksViewController alloc] initWithFetchedResultsController:fetchController style:UITableViewStylePlain];
+//    
+//    UINavigationController* nav = [[UINavigationController alloc]initWithRootViewController:notebookVC];
+//    
+//    self.window.rootViewController = nav;
+    
+    self.window.rootViewController = [notebookVC dlmkWrappedInNavigation];
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -70,8 +93,8 @@
         [DLMKNote noteWithName:@"Nappa" notebook:nb context:self.stack.context];
         [DLMKNote noteWithName:@"Radix" notebook:nb context:self.stack.context];
     
-    NSLog(@"Libreta: %@", nb);
-        NSLog(@"Foes: %@", nb.notes);
+    //NSLog(@"Libreta: %@", nb);
+    //NSLog(@"Foes: %@", nb.notes);
 }
 
 -(void) workWithData{

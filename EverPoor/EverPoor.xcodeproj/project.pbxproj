@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65CC9F781A82201800D85889 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F771A82201800D85889 /* AGTCoreDataTableViewController.m */; };
+		65CC9F7D1A82208E00D85889 /* DLMKNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F7B1A82208E00D85889 /* DLMKNotebooksViewController.m */; };
+		65CC9F821A823E1F00D85889 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F811A823E1F00D85889 /* UIViewController+Navigation.m */; };
+		65CC9F851A82437F00D85889 /* DLMKNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F841A82437F00D85889 /* DLMKNotesViewController.m */; };
 		65FA2ACE1A7F917900E87793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2ACD1A7F917900E87793 /* main.m */; };
 		65FA2AD11A7F917900E87793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AD01A7F917900E87793 /* AppDelegate.m */; };
 		65FA2AD31A7F917900E87793 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FA2AD21A7F917900E87793 /* Images.xcassets */; };
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65CC9F761A82201800D85889 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		65CC9F771A82201800D85889 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		65CC9F7A1A82208E00D85889 /* DLMKNotebooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKNotebooksViewController.h; sourceTree = "<group>"; };
+		65CC9F7B1A82208E00D85889 /* DLMKNotebooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKNotebooksViewController.m; sourceTree = "<group>"; };
+		65CC9F801A823E1F00D85889 /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		65CC9F811A823E1F00D85889 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		65CC9F831A82437F00D85889 /* DLMKNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKNotesViewController.h; sourceTree = "<group>"; };
+		65CC9F841A82437F00D85889 /* DLMKNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKNotesViewController.m; sourceTree = "<group>"; };
 		65FA2AC81A7F917900E87793 /* EverPoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverPoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA2ACC1A7F917900E87793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65FA2ACD1A7F917900E87793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,10 +93,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65CC9F791A82203B00D85889 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65CC9F761A82201800D85889 /* AGTCoreDataTableViewController.h */,
+				65CC9F771A82201800D85889 /* AGTCoreDataTableViewController.m */,
+				65CC9F7A1A82208E00D85889 /* DLMKNotebooksViewController.h */,
+				65CC9F7B1A82208E00D85889 /* DLMKNotebooksViewController.m */,
+				65CC9F831A82437F00D85889 /* DLMKNotesViewController.h */,
+				65CC9F841A82437F00D85889 /* DLMKNotesViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		65CC9F7F1A823DD600D85889 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				65CC9F801A823E1F00D85889 /* UIViewController+Navigation.h */,
+				65CC9F811A823E1F00D85889 /* UIViewController+Navigation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		65FA2ABF1A7F917900E87793 = {
 			isa = PBXGroup;
 			children = (
-				65FA2AEB1A7F950E00E87793 /* Models */,
 				65FA2ACA1A7F917900E87793 /* EverPoor */,
 				65FA2ADE1A7F917900E87793 /* EverPoorTests */,
 				65FA2AC91A7F917900E87793 /* Products */,
@@ -103,6 +136,9 @@
 		65FA2ACA1A7F917900E87793 /* EverPoor */ = {
 			isa = PBXGroup;
 			children = (
+				65CC9F7F1A823DD600D85889 /* Categories */,
+				65FA2AEB1A7F950E00E87793 /* Models */,
+				65CC9F791A82203B00D85889 /* Controllers */,
 				65FA2ACF1A7F917900E87793 /* AppDelegate.h */,
 				65FA2AD01A7F917900E87793 /* AppDelegate.m */,
 				65FA2AD21A7F917900E87793 /* Images.xcassets */,
@@ -153,6 +189,7 @@
 				65FA2AEC1A7F958000E87793 /* Model.xcdatamodeld */,
 			);
 			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		65FA2B011A7FABFB00E87793 /* Machine */ = {
@@ -271,13 +308,17 @@
 			files = (
 				65FA2B0D1A80D70A00E87793 /* AGTCoreDataStack.m in Sources */,
 				65FA2AFE1A7FAB2D00E87793 /* DLMKNote.m in Sources */,
+				65CC9F781A82201800D85889 /* AGTCoreDataTableViewController.m in Sources */,
 				65FA2AD11A7F917900E87793 /* AppDelegate.m in Sources */,
+				65CC9F821A823E1F00D85889 /* UIViewController+Navigation.m in Sources */,
 				65FA2AFF1A7FAB2D00E87793 /* DLMKNotebook.m in Sources */,
+				65CC9F7D1A82208E00D85889 /* DLMKNotebooksViewController.m in Sources */,
 				65FA2ACE1A7F917900E87793 /* main.m in Sources */,
 				65FA2B001A7FAB2D00E87793 /* DLMKPhotoContainer.m in Sources */,
 				65FA2AEE1A7F958000E87793 /* Model.xcdatamodeld in Sources */,
 				65FA2AFC1A7FAB2D00E87793 /* _DLMKNotebook.m in Sources */,
 				65FA2AFD1A7FAB2D00E87793 /* _DLMKPhotoContainer.m in Sources */,
+				65CC9F851A82437F00D85889 /* DLMKNotesViewController.m in Sources */,
 				65FA2AFB1A7FAB2D00E87793 /* _DLMKNote.m in Sources */,
 				65FA2B0A1A80CF4100E87793 /* DLMKEverPoorBaseManagedObject.m in Sources */,
 			);
@@ -462,6 +503,7 @@
 				65FA2AE71A7F917900E87793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65FA2AE81A7F917900E87793 /* Build configuration list for PBXNativeTarget "EverPoorTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +512,7 @@
 				65FA2AEA1A7F917900E87793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
