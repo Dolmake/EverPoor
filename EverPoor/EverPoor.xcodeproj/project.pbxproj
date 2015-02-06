@@ -11,6 +11,21 @@
 		65CC9F7D1A82208E00D85889 /* DLMKNotebooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F7B1A82208E00D85889 /* DLMKNotebooksViewController.m */; };
 		65CC9F821A823E1F00D85889 /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F811A823E1F00D85889 /* UIViewController+Navigation.m */; };
 		65CC9F851A82437F00D85889 /* DLMKNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F841A82437F00D85889 /* DLMKNotesViewController.m */; };
+		65CC9F8E1A836EB600D85889 /* DLMKNotebookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F8C1A836EB600D85889 /* DLMKNotebookTableViewCell.m */; };
+		65CC9F8F1A836EB600D85889 /* DLMKNotebookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9F8D1A836EB600D85889 /* DLMKNotebookTableViewCell.xib */; };
+		65CC9F941A83782B00D85889 /* DLMKPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F921A83782B00D85889 /* DLMKPhotoTableViewCell.m */; };
+		65CC9F951A83782B00D85889 /* DLMKPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9F931A83782B00D85889 /* DLMKPhotoTableViewCell.xib */; };
+		65CC9F971A83792500D85889 /* MACROS.h in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F961A83792500D85889 /* MACROS.h */; };
+		65CC9F9B1A83795000D85889 /* DLMKTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F991A83795000D85889 /* DLMKTextTableViewCell.m */; };
+		65CC9F9C1A83795000D85889 /* DLMKTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9F9A1A83795000D85889 /* DLMKTextTableViewCell.xib */; };
+		65CC9FA01A837B5500D85889 /* DLMKDatesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9F9E1A837B5500D85889 /* DLMKDatesTableViewCell.m */; };
+		65CC9FA11A837B5500D85889 /* DLMKDatesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9F9F1A837B5500D85889 /* DLMKDatesTableViewCell.xib */; };
+		65CC9FA51A837C0A00D85889 /* DLMKNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9FA31A837C0A00D85889 /* DLMKNameTableViewCell.m */; };
+		65CC9FA61A837C0A00D85889 /* DLMKNameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9FA41A837C0A00D85889 /* DLMKNameTableViewCell.xib */; };
+		65CC9FA91A837DAC00D85889 /* DLMKNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9FA81A837DAC00D85889 /* DLMKNoteViewController.m */; };
+		65CC9FAD1A83A71100D85889 /* DLMKPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC9FAB1A83A71100D85889 /* DLMKPhotoViewController.m */; };
+		65CC9FAE1A83A71100D85889 /* DLMKPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9FAC1A83A71100D85889 /* DLMKPhotoViewController.xib */; };
+		65CC9FB01A83AADA00D85889 /* No_image_available.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CC9FAF1A83AADA00D85889 /* No_image_available.jpg */; };
 		65FA2ACE1A7F917900E87793 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2ACD1A7F917900E87793 /* main.m */; };
 		65FA2AD11A7F917900E87793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FA2AD01A7F917900E87793 /* AppDelegate.m */; };
 		65FA2AD31A7F917900E87793 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FA2AD21A7F917900E87793 /* Images.xcassets */; };
@@ -46,6 +61,28 @@
 		65CC9F811A823E1F00D85889 /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
 		65CC9F831A82437F00D85889 /* DLMKNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKNotesViewController.h; sourceTree = "<group>"; };
 		65CC9F841A82437F00D85889 /* DLMKNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKNotesViewController.m; sourceTree = "<group>"; };
+		65CC9F8B1A836EB600D85889 /* DLMKNotebookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLMKNotebookTableViewCell.h; path = ../DLMKNotebookTableViewCell.h; sourceTree = "<group>"; };
+		65CC9F8C1A836EB600D85889 /* DLMKNotebookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLMKNotebookTableViewCell.m; path = ../DLMKNotebookTableViewCell.m; sourceTree = "<group>"; };
+		65CC9F8D1A836EB600D85889 /* DLMKNotebookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DLMKNotebookTableViewCell.xib; path = ../DLMKNotebookTableViewCell.xib; sourceTree = "<group>"; };
+		65CC9F911A83782B00D85889 /* DLMKPhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKPhotoTableViewCell.h; sourceTree = "<group>"; };
+		65CC9F921A83782B00D85889 /* DLMKPhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKPhotoTableViewCell.m; sourceTree = "<group>"; };
+		65CC9F931A83782B00D85889 /* DLMKPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLMKPhotoTableViewCell.xib; sourceTree = "<group>"; };
+		65CC9F961A83792500D85889 /* MACROS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACROS.h; sourceTree = "<group>"; };
+		65CC9F981A83795000D85889 /* DLMKTextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKTextTableViewCell.h; sourceTree = "<group>"; };
+		65CC9F991A83795000D85889 /* DLMKTextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKTextTableViewCell.m; sourceTree = "<group>"; };
+		65CC9F9A1A83795000D85889 /* DLMKTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLMKTextTableViewCell.xib; sourceTree = "<group>"; };
+		65CC9F9D1A837B5500D85889 /* DLMKDatesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKDatesTableViewCell.h; sourceTree = "<group>"; };
+		65CC9F9E1A837B5500D85889 /* DLMKDatesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKDatesTableViewCell.m; sourceTree = "<group>"; };
+		65CC9F9F1A837B5500D85889 /* DLMKDatesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLMKDatesTableViewCell.xib; sourceTree = "<group>"; };
+		65CC9FA21A837C0A00D85889 /* DLMKNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKNameTableViewCell.h; sourceTree = "<group>"; };
+		65CC9FA31A837C0A00D85889 /* DLMKNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKNameTableViewCell.m; sourceTree = "<group>"; };
+		65CC9FA41A837C0A00D85889 /* DLMKNameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLMKNameTableViewCell.xib; sourceTree = "<group>"; };
+		65CC9FA71A837DAC00D85889 /* DLMKNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKNoteViewController.h; sourceTree = "<group>"; };
+		65CC9FA81A837DAC00D85889 /* DLMKNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKNoteViewController.m; sourceTree = "<group>"; };
+		65CC9FAA1A83A71100D85889 /* DLMKPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLMKPhotoViewController.h; sourceTree = "<group>"; };
+		65CC9FAB1A83A71100D85889 /* DLMKPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLMKPhotoViewController.m; sourceTree = "<group>"; };
+		65CC9FAC1A83A71100D85889 /* DLMKPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLMKPhotoViewController.xib; sourceTree = "<group>"; };
+		65CC9FAF1A83AADA00D85889 /* No_image_available.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = No_image_available.jpg; sourceTree = "<group>"; };
 		65FA2AC81A7F917900E87793 /* EverPoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverPoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FA2ACC1A7F917900E87793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65FA2ACD1A7F917900E87793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +139,11 @@
 				65CC9F7B1A82208E00D85889 /* DLMKNotebooksViewController.m */,
 				65CC9F831A82437F00D85889 /* DLMKNotesViewController.h */,
 				65CC9F841A82437F00D85889 /* DLMKNotesViewController.m */,
+				65CC9FA71A837DAC00D85889 /* DLMKNoteViewController.h */,
+				65CC9FA81A837DAC00D85889 /* DLMKNoteViewController.m */,
+				65CC9FAA1A83A71100D85889 /* DLMKPhotoViewController.h */,
+				65CC9FAB1A83A71100D85889 /* DLMKPhotoViewController.m */,
+				65CC9FAC1A83A71100D85889 /* DLMKPhotoViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +155,36 @@
 				65CC9F811A823E1F00D85889 /* UIViewController+Navigation.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		65CC9F901A836EF000D85889 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65CC9F8B1A836EB600D85889 /* DLMKNotebookTableViewCell.h */,
+				65CC9F8C1A836EB600D85889 /* DLMKNotebookTableViewCell.m */,
+				65CC9F8D1A836EB600D85889 /* DLMKNotebookTableViewCell.xib */,
+				65CC9F911A83782B00D85889 /* DLMKPhotoTableViewCell.h */,
+				65CC9F921A83782B00D85889 /* DLMKPhotoTableViewCell.m */,
+				65CC9F931A83782B00D85889 /* DLMKPhotoTableViewCell.xib */,
+				65CC9F981A83795000D85889 /* DLMKTextTableViewCell.h */,
+				65CC9F991A83795000D85889 /* DLMKTextTableViewCell.m */,
+				65CC9F9A1A83795000D85889 /* DLMKTextTableViewCell.xib */,
+				65CC9F9D1A837B5500D85889 /* DLMKDatesTableViewCell.h */,
+				65CC9F9E1A837B5500D85889 /* DLMKDatesTableViewCell.m */,
+				65CC9F9F1A837B5500D85889 /* DLMKDatesTableViewCell.xib */,
+				65CC9FA21A837C0A00D85889 /* DLMKNameTableViewCell.h */,
+				65CC9FA31A837C0A00D85889 /* DLMKNameTableViewCell.m */,
+				65CC9FA41A837C0A00D85889 /* DLMKNameTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		65CC9FB11A83AAE400D85889 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65CC9FAF1A83AADA00D85889 /* No_image_available.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		65FA2ABF1A7F917900E87793 = {
@@ -136,6 +208,8 @@
 		65FA2ACA1A7F917900E87793 /* EverPoor */ = {
 			isa = PBXGroup;
 			children = (
+				65CC9FB11A83AAE400D85889 /* Resources */,
+				65CC9F901A836EF000D85889 /* Views */,
 				65CC9F7F1A823DD600D85889 /* Categories */,
 				65FA2AEB1A7F950E00E87793 /* Models */,
 				65CC9F791A82203B00D85889 /* Controllers */,
@@ -144,6 +218,7 @@
 				65FA2AD21A7F917900E87793 /* Images.xcassets */,
 				65FA2AD41A7F917900E87793 /* LaunchScreen.xib */,
 				65FA2ACB1A7F917900E87793 /* Supporting Files */,
+				65CC9F961A83792500D85889 /* MACROS.h */,
 			);
 			path = EverPoor;
 			sourceTree = "<group>";
@@ -287,8 +362,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65CC9F951A83782B00D85889 /* DLMKPhotoTableViewCell.xib in Resources */,
+				65CC9F9C1A83795000D85889 /* DLMKTextTableViewCell.xib in Resources */,
+				65CC9F8F1A836EB600D85889 /* DLMKNotebookTableViewCell.xib in Resources */,
 				65FA2AD61A7F917900E87793 /* LaunchScreen.xib in Resources */,
+				65CC9FB01A83AADA00D85889 /* No_image_available.jpg in Resources */,
 				65FA2AD31A7F917900E87793 /* Images.xcassets in Resources */,
+				65CC9FAE1A83A71100D85889 /* DLMKPhotoViewController.xib in Resources */,
+				65CC9FA11A837B5500D85889 /* DLMKDatesTableViewCell.xib in Resources */,
+				65CC9FA61A837C0A00D85889 /* DLMKNameTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,19 +390,27 @@
 			files = (
 				65FA2B0D1A80D70A00E87793 /* AGTCoreDataStack.m in Sources */,
 				65FA2AFE1A7FAB2D00E87793 /* DLMKNote.m in Sources */,
+				65CC9FA91A837DAC00D85889 /* DLMKNoteViewController.m in Sources */,
+				65CC9F8E1A836EB600D85889 /* DLMKNotebookTableViewCell.m in Sources */,
 				65CC9F781A82201800D85889 /* AGTCoreDataTableViewController.m in Sources */,
 				65FA2AD11A7F917900E87793 /* AppDelegate.m in Sources */,
 				65CC9F821A823E1F00D85889 /* UIViewController+Navigation.m in Sources */,
 				65FA2AFF1A7FAB2D00E87793 /* DLMKNotebook.m in Sources */,
+				65CC9FA01A837B5500D85889 /* DLMKDatesTableViewCell.m in Sources */,
 				65CC9F7D1A82208E00D85889 /* DLMKNotebooksViewController.m in Sources */,
+				65CC9F971A83792500D85889 /* MACROS.h in Sources */,
 				65FA2ACE1A7F917900E87793 /* main.m in Sources */,
 				65FA2B001A7FAB2D00E87793 /* DLMKPhotoContainer.m in Sources */,
 				65FA2AEE1A7F958000E87793 /* Model.xcdatamodeld in Sources */,
 				65FA2AFC1A7FAB2D00E87793 /* _DLMKNotebook.m in Sources */,
+				65CC9FAD1A83A71100D85889 /* DLMKPhotoViewController.m in Sources */,
 				65FA2AFD1A7FAB2D00E87793 /* _DLMKPhotoContainer.m in Sources */,
+				65CC9F941A83782B00D85889 /* DLMKPhotoTableViewCell.m in Sources */,
 				65CC9F851A82437F00D85889 /* DLMKNotesViewController.m in Sources */,
 				65FA2AFB1A7FAB2D00E87793 /* _DLMKNote.m in Sources */,
+				65CC9F9B1A83795000D85889 /* DLMKTextTableViewCell.m in Sources */,
 				65FA2B0A1A80CF4100E87793 /* DLMKEverPoorBaseManagedObject.m in Sources */,
+				65CC9FA51A837C0A00D85889 /* DLMKNameTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

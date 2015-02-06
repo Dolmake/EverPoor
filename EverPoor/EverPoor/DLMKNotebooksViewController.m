@@ -10,6 +10,7 @@
 #import "DLMKNotebook.h"
 #import "DLMKNotesViewController.h"
 #import "DLMKNote.h"
+#import "DLMKNotebookTableViewCell.h"
 
 @interface DLMKNotebooksViewController ()
 
@@ -25,6 +26,11 @@
     UIBarButtonItem *addBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNoteBook:)];
     
     self.navigationItem.rightBarButtonItem = addBtn;
+    
+    //Register el nib de la celda
+    UINib *nib = [UINib nibWithNibName:@"DLMKNotebookTableViewCell" bundle:[NSBundle mainBundle]];
+    
+    [self.tableView registerNib:nib forCellReuseIdentifier:[DLMKNotebookTableViewCell cellId ]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,23 +44,26 @@
     DLMKNotebook *notebook = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     //Create the cell
-    static NSString* CELL_ID =  @"CELL_NOTEBOOK_ID";
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID];
+    NSString* CELL_ID =  [DLMKNotebookTableViewCell cellId];
+    DLMKNotebookTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID];
     
-    if (!cell){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CELL_ID ];
-    }
     
     //Setup the cell
-    cell.textLabel.text = notebook.name;
+    cell.nameView.text = notebook.name;
+    cell.notesView.text = [NSString stringWithFormat:@"%lu", notebook.notes.count];
     
+    /*
     NSDateFormatter * fmt = [NSDateFormatter new];
     fmt.dateStyle = NSDateFormatterShortStyle;
     cell.detailTextLabel.text = [ NSString stringWithFormat:@"%@ ( %lu notes)",
                                  [fmt stringFromDate:notebook.modificationDate], (unsigned long)notebook.notes.count];
-    
+    */
     return cell;
     
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [DLMKNotebookTableViewCell height];
 }
 
 -(NSString*) tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath{

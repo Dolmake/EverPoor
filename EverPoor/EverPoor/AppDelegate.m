@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Dolmake. All rights reserved.
 //
 
+#import "MACROS.h"
 #import "AppDelegate.h"
 #import "AGTCoreDataStack.h"
 #import "DLMKNote.h"
@@ -24,6 +25,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //NSString* typeName = NSStringFromClass([DLMKNote class]);
+
+     NSLog(NSStringize(Serializando string));
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     

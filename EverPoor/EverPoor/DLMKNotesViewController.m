@@ -10,6 +10,7 @@
 #import "DLMKNote.h"
 #import "DLMKPhotoContainer.h"
 #import "DLMKNotebook.h"
+#import "DLMKNoteViewController.h"
 
 @implementation DLMKNotesViewController
 
@@ -52,6 +53,8 @@
     
 }
 
+
+
 -(void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (editingStyle == UITableViewCellEditingStyleDelete){
@@ -68,5 +71,27 @@
 -(void)addNote:(id)sender{
     DLMKNote *note = [DLMKNote noteWithName:@"New Note" notebook:self.notebook context:self.notebook.managedObjectContext];
 }
+
+
+#pragma mark - Delegate
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //Lookup the proper note
+    DLMKNote* note = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    //Create the Note Form
+    DLMKNoteViewController* nVC = [[DLMKNoteViewController alloc] initWithModel:note ];
+    
+    
+    //Do the push
+    [self.navigationController pushViewController:nVC animated:YES];
+}
+
+
+
+
+
+
+
+
 
 @end
