@@ -73,7 +73,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    id cell = [self cellClassPerSection:indexPath.section];
+    return [self cell:cell tableView:tableView ];
     
+    /*
     switch (indexPath.section) {
         case NAME_SECTION:
             return [self cell:[DLMKNameTableViewCell class] tableView:tableView ];
@@ -92,11 +95,33 @@
             return nil;
             break;
     }
+     */
   
 }
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-   
+    
+    /*
+    id cell = [self cellClassPerSection:indexPath.section];
+    //return (CGFloat)([cell valueForKey:@"height"]);
+    
+    float returnValue = 0;
+    SEL selector = NSSelectorFromString(@"height");
+    if ([cell respondsToSelector:selector]) {
+        //NSInvocationSignature* sig;
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
+                                    [cell
+                                     instanceMethodSignatureForSelector:selector]];
+        [invocation setSelector:selector];
+        //[invocation setTarget:someInstance];
+        [invocation invoke];
+       
+        [invocation getReturnValue:&returnValue];
+        NSLog(@"Returned %f", returnValue);
+    }
+    return returnValue;
+     */
+    
     switch (indexPath.section) {
         case NAME_SECTION:
             return [DLMKNameTableViewCell height];
@@ -130,40 +155,6 @@
     }
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 -(NSString*) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     
@@ -217,6 +208,30 @@
     [result setValue:self.note forKey:@"note"];
     
     return result;
+}
+
+-(id) cellClassPerSection:(NSInteger)section{
+    
+    switch (section) {
+        case NAME_SECTION:
+            return [DLMKNameTableViewCell class];
+            break;
+        case DATES_SECTION:
+            return [DLMKDatesTableViewCell class];
+            break;
+        case TEXT_SECTION:
+            return [DLMKTextTableViewCell class];
+            break;
+        case IMAGE_SECTION:
+            return [DLMKPhotoTableViewCell class];
+            break;
+            
+        default:
+            return nil;
+            break;
+    }
+
+    
 }
 
 
