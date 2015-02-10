@@ -62,7 +62,7 @@
                          self.photoView.alpha = 0;
                      }
                      completion:^(BOOL finished){
-                         self.note.photo = nil;
+                         self.note.photo.image = nil;
                          self.photoView.image = nil;
                          self.photoView.bounds =oldRect;
                          self.photoView.alpha = 1;

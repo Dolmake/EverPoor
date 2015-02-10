@@ -11,6 +11,7 @@ const struct DLMKNoteAttributes DLMKNoteAttributes = {
 };
 
 const struct DLMKNoteRelationships DLMKNoteRelationships = {
+	.location = @"location",
 	.notebook = @"notebook",
 	.photo = @"photo",
 };
@@ -51,6 +52,8 @@ const struct DLMKNoteRelationships DLMKNoteRelationships = {
 @dynamic name;
 
 @dynamic text;
+
+@dynamic location;
 
 @dynamic notebook;
 

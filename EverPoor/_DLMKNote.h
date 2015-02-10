@@ -12,10 +12,12 @@ extern const struct DLMKNoteAttributes {
 } DLMKNoteAttributes;
 
 extern const struct DLMKNoteRelationships {
+	__unsafe_unretained NSString *location;
 	__unsafe_unretained NSString *notebook;
 	__unsafe_unretained NSString *photo;
 } DLMKNoteRelationships;
 
+@class DLMKLocation;
 @class DLMKNotebook;
 @class DLMKPhotoContainer;
 
@@ -44,6 +46,10 @@ extern const struct DLMKNoteRelationships {
 
 //- (BOOL)validateText:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) DLMKLocation *location;
+
+//- (BOOL)validateLocation:(id*)value_ error:(NSError**)error_;
+
 @property (nonatomic, strong) DLMKNotebook *notebook;
 
 //- (BOOL)validateNotebook:(id*)value_ error:(NSError**)error_;
@@ -67,6 +73,9 @@ extern const struct DLMKNoteRelationships {
 
 - (NSString*)primitiveText;
 - (void)setPrimitiveText:(NSString*)value;
+
+- (DLMKLocation*)primitiveLocation;
+- (void)setPrimitiveLocation:(DLMKLocation*)value;
 
 - (DLMKNotebook*)primitiveNotebook;
 - (void)setPrimitiveNotebook:(DLMKNotebook*)value;
